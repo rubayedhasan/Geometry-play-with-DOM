@@ -38,7 +38,57 @@
     </header>
 
     <!-- main section  -->
-    <main></main>
+    <main class="container mx-auto mt-10">
+      <section class="flex flex-col md:flex-row justify-between gap-x-5">
+        <!-- geometry shape display section container  -->
+        <div class="flex-1 border-2 border-black p-10 h-full">
+          <!-- card of triangle  -->
+          <div
+            class="card w-96 bg-base-100 shadow-xl hover:bg-pink-300 pt-8 transition-all duration-700"
+          >
+            <figure><img src="images/triangle.png" alt="triangle" /></figure>
+            <div class="card-body">
+              <!-- card title  -->
+              <h2 class="card-title mx-auto">Triangle!</h2>
+              <p class="text-center text-xl">Area (A) = 0.5 * b * h</p>
+
+              <!-- input container  -->
+              <div>
+                <!-- base input field  -->
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id=""
+                  placeholder="b"
+                />
+                <span class="ml-2 mr-4">cm</span>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id=""
+                  placeholder="h"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+
+              <!-- button container  -->
+              <div class="card-actions">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- area calculation section container -->
+        <div class="w-1/5 border-2 border-black min-h-96 max-h-full px-5 py-8">
+          <h4 class="text-2xl font-medium text-center underline">
+            Area Calculation
+          </h4>
+        </div>
+      </section>
+    </main>
 
     <!-- footer section  -->
     <footer></footer>
