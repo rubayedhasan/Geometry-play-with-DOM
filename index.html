@@ -59,7 +59,7 @@
                   type="number"
                   class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
                   name=""
-                  id=""
+                  id="triangle-base"
                   placeholder="b"
                 />
                 <span class="ml-2 mr-4">cm</span>
@@ -67,15 +67,28 @@
                   type="number"
                   class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
                   name=""
-                  id=""
+                  id="triangle-height"
                   placeholder="h"
                 />
                 <span class="ml-2">cm</span>
               </div>
 
+              <!-- display area container  -->
+              <div>
+                <p>
+                  Area: <span id="triangle-area-display">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+
               <!-- button container  -->
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateTriangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -92,5 +105,8 @@
 
     <!-- footer section  -->
     <footer></footer>
+
+    <!-- scripts  -->
+    <script src="script/triangle-area-calculation.js"></script>
   </body>
 </html>
