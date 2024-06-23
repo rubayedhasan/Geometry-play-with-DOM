@@ -144,6 +144,212 @@
               </div>
             </div>
           </div>
+
+          <!-- card of parallelogram  -->
+          <div
+            class="card w-96 bg-base-100 shadow-xl hover:bg-pink-300 pt-8 transition-all duration-700"
+          >
+            <figure>
+              <img src="images/parallelogram.png" alt="parallelogram" />
+            </figure>
+            <div class="card-body">
+              <!-- card title  -->
+              <h2 class="card-title mx-auto">Parallelogram!</h2>
+              <p class="text-center text-xl">Area (A) = b * h</p>
+
+              <!-- input container  -->
+              <div>
+                <!-- base input field  -->
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="parallelogram-base"
+                  placeholder="b"
+                />
+                <span class="ml-2 mr-4">cm</span>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="parallelogram-height"
+                  placeholder="h"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+
+              <!-- display area container  -->
+              <div>
+                <p>
+                  Area: <span id="parallelogram-area-display">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+
+              <!-- button container  -->
+              <div class="card-actions">
+                <button
+                  onclick="calculateTriangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card of rhombus  -->
+          <div
+            class="card w-96 bg-base-100 shadow-xl hover:bg-purple-300 pt-8 transition-all duration-700"
+          >
+            <figure><img src="images/rectangle.png" alt="rhombus" /></figure>
+            <div class="card-body">
+              <!-- card title  -->
+              <h2 class="card-title mx-auto">Rhombus!</h2>
+              <p class="text-center text-xl">Area (A) = 0.5 * d1 * d2</p>
+
+              <!-- input container  -->
+              <div>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="rhombus-first-demension"
+                  placeholder="d1"
+                />
+                <span class="ml-2 mr-4">cm</span>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="rhombus-second-demension"
+                  placeholder="d2"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+
+              <!-- display area container  -->
+              <div>
+                <p>
+                  Area: <span id="rhombus-area-display">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+
+              <!-- button container  -->
+              <div class="card-actions">
+                <button
+                  onclick="calculateRectangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card of pentagon  -->
+          <div
+            class="card w-96 bg-base-100 shadow-xl hover:bg-pink-300 pt-8 transition-all duration-700"
+          >
+            <figure><img src="images/triangle.png" alt="pentagon" /></figure>
+            <div class="card-body">
+              <!-- card title  -->
+              <h2 class="card-title mx-auto">Pentagon!</h2>
+              <p class="text-center text-xl">
+                Area (A) = 0.5 * perimeter * apothem
+              </p>
+
+              <!-- input container  -->
+              <div>
+                <!-- base input field  -->
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="pentagon-perimeter"
+                  placeholder="p"
+                />
+                <span class="ml-2 mr-4">cm</span>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="pentagon-apothem"
+                  placeholder="a"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+
+              <!-- display area container  -->
+              <div>
+                <p>
+                  Area: <span id="pentagon-area-display">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+
+              <!-- button container  -->
+              <div class="card-actions">
+                <button
+                  onclick="calculateTriangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card of ellipses  -->
+          <div
+            class="card w-96 bg-base-100 shadow-xl hover:bg-purple-300 pt-8 transition-all duration-700"
+          >
+            <figure><img src="images/rectangle.png" alt="ellipses" /></figure>
+            <div class="card-body">
+              <!-- card title  -->
+              <h2 class="card-title mx-auto">Ellipses!</h2>
+              <p class="text-center text-xl">Area (A) = π * a * b</p>
+
+              <!-- input container  -->
+              <div>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="ellipses-mejor-radius"
+                  placeholder="a"
+                />
+                <span class="ml-2 mr-4">cm</span>
+                <input
+                  type="number"
+                  class="w-28 border border-black px-2.5 py-1 rounded-sm bg-gray-200"
+                  name=""
+                  id="ellipses-minor-radius"
+                  placeholder="b"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+
+              <!-- display area container  -->
+              <div>
+                <p>
+                  Area: <span id="ellipses-area-display">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+
+              <!-- button container  -->
+              <div class="card-actions">
+                <button
+                  onclick="calculateRectangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- area calculation section container -->
